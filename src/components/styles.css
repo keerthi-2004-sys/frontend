@@ -1,0 +1,233 @@
+/* styles.css */
+.bg-babypink {
+    background-color: pink !important; /* Baby Pink color */
+  }
+  /* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.pacifico-font {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+.navbar {
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+p {
+    max-width: 400px;
+    font-size: 12px;
+    display: -webkit-box;
+    line-clamp: 5;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 6em
+  }
+a {
+    color: blue;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 15px;
+}
+a:hover{
+    scale: 1.1;
+    border-bottom: 2px solid black;
+}
+h2 {
+    margin-top: 0;
+}
+img {
+    max-width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+img {
+    width: 400px;
+}
+/* General Styles for Cards Section */
+.cards-section {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 400px; /* Fixed width for equal size */
+    height: 600px; /* Fixed height for equal size */
+    background-color: pink;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Position for the button */
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Allows vertical scrolling */
+    height: 500px; /* Full height of the card */
+  }
+  
+  .card img {
+    width: 200%;
+    height: 400px; /* Equal image height */
+    object-fit: cover; /* Ensure images cover the area */
+    margin-bottom: 15px; /* Space between image and text */
+  }
+  
+  .card-title {
+    font-weight: bold; /* Make card title bold */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  img{
+   /* Adds a 5px solid black border */
+    border: 5px solid #000; 
+    border-radius: 1px;     /* Optional: Adds rounded corners to the image */
+  }
+  .navbar-brand.pacifico-font {
+    font-size: 28px;  /* Adjust the value to your preferred size */
+    color: black;      /* Optional: Set the text color to white (or any color you want) */
+  }
+  /* Remove border around the main image */
+
+  .extra-content {
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .scroll-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+#carouselExampleAutoplaying {
+    height: auto;
+    width: auto;
+    
+}
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto; /* Ensures the aspect ratio is maintained */
+    border: 50px; /* Ensures the images have no borders */
+    object-fit: cover; /* Makes sure the image covers the area properly without stretching */
+  }
+  /* Adjustments for the carousel */
+.carousel {
+    position: relative;
+    width: 100%; /* Ensures the carousel takes full width */
+    height: auto; /* Let the height adjust based on the content */
+  }
+  
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 20px; /* Ensures no border around the image */
+  }
+  
+  /* Buttons (Previous and Next) */
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
+  /* Adjust button colors on hover */
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* For better spacing between cards and carousel */
+  .row {
+    margin-top: -10px; /* Reduce space between carousel and cards */
+    margin-bottom: 10px; /* Optional: give a bit of space at the bottom */
+  }
+  
+  /* Style adjustments for the cards */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on cards */
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly bigger shadow on hover */
+  }
+  
+  /* Responsive grid adjustments */
+  @media (max-width: 576px) {
+    .row-cols-1 {
+      margin: 0;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .row-cols-sm-2 {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .row-cols-md-3 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  /* Adding a border around the carousel */
+/* Adding a border around the carousel */
+.carousel {
+    border: 5px solid #333; /* 5px solid border around the carousel */
+    border-radius: 10px; /* Optional: rounded corners */
+    overflow: hidden; /* Prevents overflow of image from border */
+    margin-bottom: 15px; /* Optional: Adds space between carousel and other content */
+}
+
+/* Ensuring the images within the carousel are sized and fit correctly */
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    display: block; /* Prevents image from inheriting unwanted margin/padding */
+    border: none; /* Ensures no border on individual images */
+}

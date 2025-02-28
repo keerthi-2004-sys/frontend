@@ -21,16 +21,16 @@ const Home = () => {
                 <img src="Food-best-hd-photos.jpg" class="d-block w-100" alt="PIZZA" />
             </div>
             <div class="carousel-item">
-                <img src="download.jpeg" class="d-block w-100" alt="biriyani" />
+                <img src="wp7029319.webp" class="d-block w-100" alt="biriyani" />
             </div>
             <div class="carousel-item">
-                <img src="th.jpeg" class="d-block w-100" alt="french fries" />
+                <img src="wp3608465.webp" class="d-block w-100" alt="french fries" />
+            </div>
+            <div class="carousel-item">
+                <img src="360_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg" class="d-block w-100" alt="french fries" />
             </div>
             <div class="carousel-item">
                 <img src="OIP (3).jpeg" class="d-block w-100" alt="french fries" />
-            </div>
-            <div class="carousel-item">
-                <img src="OIP (4).jpeg" class="d-block w-100" alt="french fries" />
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
